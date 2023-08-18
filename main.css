@@ -1,0 +1,252 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+body{box-sizing: border-box;}
+a{ text-decoration: none; color: black;}
+
+.all-container {
+  width: 100%;
+  max-width: 360px;
+  height: 100vh;
+  max-height: 664px;
+  box-sizing: border-box;  
+}
+
+.area01-container{
+  /* background-repeat: no-repeat;
+  background-image: url("./img/mainImg.png");
+  background-size : cover; */
+  position: relative;
+
+}
+
+.area01-main-box{
+  
+}
+
+.area01-main-box img{
+  width: 100%;
+}
+
+
+.top-head-text{
+  width: 100%;
+  color: var(--basic-white, #FFF);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-feature-settings: 'dlig' on, 'ss02' on;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.14px;
+  position: absolute;
+  top:0;
+}
+
+.middle-head{
+  width: 100%;
+  position: absolute;
+  top:50px;
+  
+}
+
+
+.area02-container{
+  background-color: white;
+}
+
+
+.font-orange{
+  color: var(--secondary-normal, #FF6B00);
+  /* Body/B1 */
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 144%; /* 23.04px */
+}
+
+.main-title{
+  color: var(--basic-black, #212121);
+  font-family: Pretendard;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 136%; /* 32.64px */
+
+}
+
+.main-title02{
+  font-family: Pretendard;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+
+.sub-text{
+  
+  font-family: Pretendard;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+
+
+
+}
+.sub-text02{
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: -10px;
+
+}
+
+.area02-img-container {
+  position: relative;  
+}
+
+
+
+.area02-bookmark-icon{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 24px;
+}
+
+.area02-card img{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.area02-hot-text{
+  position: absolute;
+  width: 53px;
+  height: 30px;
+  background-color: #212121;
+  text-align: center;
+}
+
+.area02-hot-text p {
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+
+}
+
+.area03-container{
+  background: white;
+}
+
+.area03-box{
+  height: 100px;
+}
+
+.area03-num-text{
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.area03-num-position{
+  line-height: 75px;
+  text-align: center;
+}
+
+.area03-main-text{
+  font-family: Pretendard;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.area03-sub-text{
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+.area03-content-line{
+  border-bottom: 5px solid black;
+
+}
+
+.area04-gray-text{
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+.area04-theme-container {
+  width: 100%;
+  
+}
+.area04-theme-box {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  padding: 0px;
+
+}
+
+.area04-theme-box img{
+    width: 100%;
+}
+
+.area04-theme-text{
+  position: absolute;
+  bottom: 0px;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  white-space: normal; /* 기존의 nowrap 속성 해제 */
+  word-wrap: break-word; /* 줄바꿈을 위한 속성 추가 */
+
+}
+
+.area04-theme-box {
+  position: relative;
+}
+
+.footer-container{
+  width: 100%;
+  height: 100%;
+  max-height: 304px;
+  position: fixed;
+  bottom: 0px;
+}
+
+@media (min-width: 760px) {
+  /* 화면 크기가 760px일 때 배경 크기 조정 */
+  .all-container {
+    max-width: 760px;
+    
+  }
+}
