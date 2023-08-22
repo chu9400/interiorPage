@@ -111,8 +111,12 @@ text-align: left;
 
 .area02-img-container {
   position: relative;  
+  overflow: hidden;
 }
 
+.area02-img{
+  transition: all 0.2s;
+}
 
 
 .area02-bookmark-icon{
@@ -120,6 +124,9 @@ text-align: left;
   right: 20px;
   top: 20px;
   font-size: 24px;
+  z-index: 1;
+  cursor: pointer;
+  color: white;
 }
 
 .area02-card img{
@@ -134,6 +141,7 @@ text-align: left;
   height: 30px;
   background-color: #212121;
   text-align: center;
+  z-index: 1;
 }
 
 .area02-hot-text p {
@@ -151,7 +159,9 @@ text-align: left;
 }
 
 .area03-box{
-  height: 100px;
+  height: 120px;
+  line-height: 100px;
+  overflow: hidden;
 }
 
 .area03-num-text{
@@ -186,8 +196,11 @@ text-align: left;
   text-align: left;
 
 }
+.area03-img img{
+  transition: all 0.2s;
+}
 .area03-content-line{
-  border-bottom: 5px solid black;
+  border-bottom: 1px solid #D9D9D9;
 
 }
 
@@ -209,11 +222,14 @@ text-align: left;
   height: 150px;
   position: relative;
   padding: 0px;
+  overflow: hidden;
 
 }
 
 .area04-theme-box img{
     width: 100%;
+    transition: all 0.2s;
+    
 }
 
 .area04-theme-text{
@@ -237,16 +253,126 @@ text-align: left;
 
 .footer-container{
   width: 100%;
-  height: 100%;
+  max-width: 360px;
   max-height: 304px;
   position: fixed;
-  bottom: 0px;
+  bottom: 35px;
+  z-index: 1;
 }
+
+.footer-popup{
+  width: 100%;
+  max-height: 227px;
+  background: #212121E5;
+  opacity: 0.9;
+  border-radius: 20px 20px 0px 0px;
+  position: relative;
+}
+.footer-popup-null-box{
+  height: 227px;
+  display: none;
+}
+
+.footer-main-text{
+  width: 100%;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  color: white;  
+
+}
+.footer-sub-text{
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: white;  
+  
+}
+
+
+.footer-btn{
+  width: 100%;
+  height: 48px;
+  max-width: 312px;
+  line-height: 48px;
+  text-align: center;
+  background: #000CC8;
+  color: white;
+  margin: auto;
+}
+
+
+.close-btn{
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 21px;
+  left: 316px;
+  cursor: pointer;
+}
+
+.close-btn i{
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  line-height: 24px;
+  font-size: 24px;
+}
+
+.footer-icon-container{
+  text-align: center;
+  color: #BDBDBD;
+  font-family: Pretendard;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em; 
+  cursor: pointer;
+  background: white;
+}
+
+.text-black{
+  color: black;
+}
+.text-orange{
+  color: #FF6B00;
+}
+
+.footer-bar {
+  text-align: center;
+  background: #0F0F0F66;
+  opacity: 0.4;
+  
+}
+
+.footer-null-bg{
+  height: 120px;
+}
+
 
 @media (min-width: 760px) {
   /* 화면 크기가 760px일 때 배경 크기 조정 */
   .all-container {
     max-width: 760px;
-    
   }
+
+  .footer-container{
+    max-width: 760px;
+  }
+  .footer-popup{
+    text-align: center;
+  }
+  .close-btn{
+    left: 710px;
+  }
+  .footer-null-bg{
+    height: 98px;
+  }
+  
+  
 }
